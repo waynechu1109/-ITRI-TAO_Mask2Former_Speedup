@@ -1,0 +1,4 @@
+{"date": "4/23/2025", "time": "8:56:14", "status": "STARTED", "verbosity": "INFO", "message": "Starting Mask2Former export."}
+{"date": "4/23/2025", "time": "8:56:14", "status": "FAILURE", "verbosity": "INFO", "message": "[Errno 2] No such file or directory: '/results/train/mask2former_model.pth'"}
+{"date": "4/23/2025", "time": "8:57:30", "status": "STARTED", "verbosity": "INFO", "message": "Starting Mask2Former export."}
+{"date": "4/23/2025", "time": "8:58:4", "status": "RUNNING", "verbosity": "INFO", "message": "Export finished successfully."}

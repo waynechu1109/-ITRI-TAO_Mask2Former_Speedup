@@ -1,0 +1,78 @@
+results_dir: /self_retrain/mask2former_r50
+dataset:
+  contiguous_id: True
+  label_map: /self_retrain/config_merged.json
+  train:
+    type: 'merged'
+    name: "merged_train"
+    # instance_json: "/data/raw-data/annotations/instances_train2017.json"
+    img_dir: "/datasets/merged_dataset/images/training"
+    batch_size: 16
+    num_workers: 2
+  val:
+    type: 'merged'
+    name: "merged_val"
+    # instance_json: "/data/raw-data/annotations/instances_val2017.json"
+    img_dir: "/datasets/merged_dataset/images/validation"
+    batch_size: 1
+    num_workers: 2
+  test:
+    img_dir: /datasets/merged_dataset/images/validation
+    batch_size: 1
+  augmentation:
+    train_min_size: [640]
+    train_max_size: 2048
+    train_crop_size: [640, 640]
+    test_min_size: 640
+    test_max_size: 2048
+train:
+  precision: 'fp16'
+  num_gpus: 1
+  checkpoint_interval: 1
+  validation_interval: 1
+  num_epochs: 50
+  optim:
+    lr_scheduler: "MultiStep"
+    milestones: [44, 48]
+    type: "AdamW"
+    lr: 0.0001
+    weight_decay: 0.05
+model:
+  object_mask_threshold: 0.1
+  overlap_threshold: 0.8
+  mode: "semantic"  # We are doing semantic segmentation!!!
+  backbone:
+    type: "r50"
+    pretrained_weights: "detectron2://ImageNetPretrained/torchvision/R-50.pkl"
+    depth: 50
+    stem_out_channels: 64
+    stride_in_1x1: False
+    out_features: ["res2", "res3", "res4", "res5"]
+    # swin:
+    #   type: "tiny"
+    #   window_size: 7
+    #   ape: False
+    #   pretrain_img_size: 224
+  mask_former:
+    num_object_queries: 100
+  sem_seg_head:
+    norm: "GN"
+    num_classes: 222   # set the num_classes here
+export:
+  input_channel: 3
+  input_width: 640
+  input_height: 640
+  opset_version: 17
+  batch_size: -1  # dynamic batch size
+  on_cpu: False
+gen_trt_engine:
+  gpu_id: 0
+  input_channel: 3
+  input_width: 640
+  input_height: 640
+  tensorrt:
+    data_type: fp16
+    workspace_size: 4096
+    min_batch_size: 1
+    opt_batch_size: 1
+    max_batch_size: 1

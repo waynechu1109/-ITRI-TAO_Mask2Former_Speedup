@@ -1,0 +1,15 @@
+{"date": "4/23/2025", "time": "9:2:5", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former gen_trt_engine."}
+{"date": "4/23/2025", "time": "9:5:32", "status": "RUNNING", "verbosity": "INFO", "message": "Gen_trt_engine finished successfully."}
+{"date": "4/23/2025", "time": "9:8:19", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former trt_evaluate."}
+{"date": "4/23/2025", "time": "9:8:21", "status": "FAILURE", "verbosity": "INFO", "message": "[Experimental] Only support engines exported in the `semantic` mode."}
+{"date": "4/23/2025", "time": "9:9:45", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former inference."}
+{"date": "4/23/2025", "time": "11:48:38", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former gen_trt_engine."}
+{"date": "4/23/2025", "time": "11:52:13", "status": "RUNNING", "verbosity": "INFO", "message": "Gen_trt_engine finished successfully."}
+{"date": "4/23/2025", "time": "12:3:31", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former gen_trt_engine."}
+{"date": "4/23/2025", "time": "12:7:15", "status": "RUNNING", "verbosity": "INFO", "message": "Gen_trt_engine finished successfully."}
+{"date": "4/23/2025", "time": "12:21:27", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former gen_trt_engine."}
+{"date": "4/23/2025", "time": "12:32:34", "status": "RUNNING", "verbosity": "INFO", "message": "Gen_trt_engine finished successfully."}
+{"date": "4/23/2025", "time": "13:7:2", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former gen_trt_engine."}
+{"date": "4/23/2025", "time": "13:10:39", "status": "RUNNING", "verbosity": "INFO", "message": "Gen_trt_engine finished successfully."}
+{"date": "4/25/2025", "time": "14:22:49", "status": "STARTED", "verbosity": "INFO", "message": "Starting mask2former gen_trt_engine."}
+{"date": "4/25/2025", "time": "14:23:55", "status": "RUNNING", "verbosity": "INFO", "message": "Gen_trt_engine finished successfully."}

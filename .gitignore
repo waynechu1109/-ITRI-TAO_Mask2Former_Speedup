@@ -1,0 +1,17 @@
+# *.png
+# *.jpg
+*.pth
+*.engine
+*.onnx
+events.*
+*.pkl
+
+.DS_Store
+*.csv
+*.txt
+data/raw-data/annotations/json_format.py
+
+data/
+datasets/
+experiments/
+inference/
