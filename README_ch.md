@@ -1,3 +1,9 @@
+<h2 align="center">
+  <strong>
+    <a href="README.md">English</a> | <a href="README_ch.md">中文</a>
+  </strong>
+</h2>
+
 # [工研院實習專案] [NVIDIA TAO](https://developer.nvidia.com/tao-toolkit) Mask2Former 加速
 
 ## NVIDIA TAO Toolkit

@@ -1,3 +1,9 @@
+<h2 align="center">
+  <strong>
+    <a href="README.md">English</a> | <a href="README_ch.md">中文</a>
+  </strong>
+</h2>
+
 # [ITRI Internship] [NVIDIA TAO](https://developer.nvidia.com/tao-toolkit) Mask2Former Speedup
 This project is a follow-up project to **Mask2Former_retrain**. 
 
@@ -105,7 +111,9 @@ If you want to generate the TensorRT `.engine` file that is compatible with `AAr
 The segmentation results show that the Mask2Former model trained by NVIDIA TAO Toolkit can segment the scene well which fulfill the application needs. 
 
 ## Related Porjects
-
+- [Mask2Former Retrain](https://github.com/waynechu1109/-ITRI-Mask2Former_Retrain.git)
+- [Mask2Former Real-Time Video Inference](https://github.com/waynechu1109/-ITRI-Mask2Former_Deployment.git)
+<!-- - [NVIDIA TAO Mask2Former Speedup](https://github.com/waynechu1109/-ITRI-TAO_Mask2Former_Speedup.git) -->
 
 
 ## Acknowledgement
