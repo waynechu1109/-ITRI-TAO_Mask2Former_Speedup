@@ -15,3 +15,5 @@ data/
 datasets/
 experiments/
 inference/
+
+mask2former_inst.ipynb
